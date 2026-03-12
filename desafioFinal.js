@@ -1,4 +1,4 @@
-const usuarios = [
+const usuarios_v2 = [
 
 {id:1, nombre:"Ana", edad:20},
 
@@ -10,7 +10,7 @@ const usuarios = [
 
 // 1
     
-console.log(usuarios);
+console.log(usuarios_v2);
 
 // 2
 
@@ -18,7 +18,7 @@ function obtenerUsuarioPorId(usuarios, id) {
     return usuarios.find(usuario => usuario.id == id);
 }
 
-console.log(obtenerUsuarioPorId(usuarios, 3));
+console.log(obtenerUsuarioPorId(usuarios_v2, 3));
 
 // 3
 
@@ -26,7 +26,7 @@ function obtenerMayoresQueX(usuarios, edad){
     return usuarios.filter(usuario => usuario.edad > edad);
 }
 
-console.log(obtenerMayoresQueX(usuarios, 18));
+console.log(obtenerMayoresQueX(usuarios_v2, 18));
 
 // 4
 
@@ -39,6 +39,6 @@ function crearUsuario(usuarios, nombre, edad){
 
   usuarios.push(nuevoUsuario);
 }
-crearUsuario(usuarios, "Gilberto", 52);
+crearUsuario(usuarios_v2, "Gilberto", 52);
 
-console.log(usuarios);
+console.log(usuarios_v2);
